@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Student Management System"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Dashboard Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Student"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnViewStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Students"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Courses"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard (Tabs)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnQuickActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick Actions (Popup)"
+            android:backgroundTint="#607D8B"/>
+    </LinearLayout>
+
+    <!-- Website Feature Section -->
+    <TextView
+        android:id="@+id/tvWebLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonContainer"
+        android:layout_marginTop="30dp"
+        android:text="College Website:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWebLabel"
+        android:hint="Type URL (e.g. www.google.com)"
+        android:inputType="textUri"
+        android:text="www.android.com" />
+
+    <Button
+        android:id="@+id/btnOpenWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUrl"
+        android:layout_marginTop="5dp"
+        android:text="Open Website (Implicit Intent)" />
+
+</RelativeLayout>

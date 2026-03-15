@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Summary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle">
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Name: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvNameSummary" />
+        </TableRow>
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Student ID: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvIDSummary" />
+        </TableRow>
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Gender: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvGenderSummary" />
+        </TableRow>
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Course: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvCourseSummary" />
+        </TableRow>
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Skills: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvSkillsSummary" />
+        </TableRow>
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Experience: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvExpSummary" />
+        </TableRow>
+
+        <TableRow android:padding="8dp">
+            <TextView android:text="Admission Date: " android:textStyle="bold" />
+            <TextView android:id="@+id/tvDateSummary" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
