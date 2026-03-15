@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_today"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_wishlist"
+        android:title="Wishlist"
+        android:icon="@drawable/ic_heart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+</menu>
